@@ -1,0 +1,14 @@
+[package]
+name = "myproxy"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+url = "2"
+serde = { version = "1", features = ["derive"] }
+tower-http = { version = "0.5", features = ["cors"] } # Add this line
+urlencoding = "2"
+axum = "0.8.4"
+reqwest = "0.12.20"
+tower = "0.5.2"
